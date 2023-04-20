@@ -48,10 +48,15 @@ $ docker-compose exec web python manage.py collectstatic --no-input
 $ docker-compose down -v
 ```
 
-Документация 
+Шаблон наполнения .env (не включен в текущий репозиторий) расположенный по пути infra/.env
 
 ```
-http://127.0.0.1:8000/redoc/
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+DB_HOST=db
+DB_PORT=5432
 ```
 
 
